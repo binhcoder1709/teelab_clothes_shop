@@ -9,11 +9,11 @@ export class FirebaseService implements OnModuleInit {
   private storage: Storage;
 
   onModuleInit() {
-    const serviceAccount = require(process.env.FIREBASE_SECRET || "D:\\fullstack\\module5\\Project\\server\\src\\configs\\firebase\\secret_key\\firebaseSecret.json");
+    const serviceAccount = require(process.env.FIREBASE_SECRET);
 
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      storageBucket: process.env.STORAGE_BUCKET || 'spotify-83b9c.appspot.com'
+      storageBucket: process.env.STORAGE_BUCKET
     });
 
     this.storage = new Storage({
