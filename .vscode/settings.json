@@ -1,0 +1,14 @@
+{
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestions": {
+    "other": "true",
+    "strings": "true"
+  },
+  "editor.suggest.preview": false,
+  "workbench.settings.useSplitJSON": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  "editor.suggest.showSnippets": true
+}
